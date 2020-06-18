@@ -7,6 +7,8 @@ RUN apt-get install -y monitorix
 ADD launch.sh /launch.sh
 RUN chmod +x /launch.sh
 
+ADD monitorix.conf /etc/monitorix/monitorix.conf
+
 CMD sh /launch.sh
 
 ENV OPTIONS=""
