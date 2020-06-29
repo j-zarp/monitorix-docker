@@ -3,8 +3,8 @@ services:
   monitorix:
     build: ./
     restart: always
-    ports:
-      - 8080:8080
+    #ports:
+    #  - 8080:8080 # not needed with network_mode = host
     restart: always
     network_mode: host
 
